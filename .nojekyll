@@ -1,0 +1,16 @@
+# 1. 기존 git 기록 삭제
+rm -rf .git
+
+# 2. 새로운 git 저장소 초기화
+git init
+
+# 3. 브랜치 이름을 main(또는 master)으로 설정
+git branch -M main
+
+# 4. 모든 파일을 스테이지에 올리고 첫 커밋 생성
+git add .
+git commit -m "Initial commit"
+
+# 5. 원격 저장소에 강제로 덮어쓰기 (레포지토리 주소 입력)
+git remote add origin https://github.com/sjw0328/OMEGA-X
+git push -f origin main
